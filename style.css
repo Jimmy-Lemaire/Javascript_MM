@@ -1,0 +1,15 @@
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    justify-content: center;
+    align-content: center;
+}
+button{
+    width : 70px;
+    height : 20px;
+    justify-content: center;
+    align-content: center;
+}
