@@ -9,3 +9,5 @@ moto.detect();
 console.log(voiture.detect(),moto.detect())
 voiture.boost();
 console.log(voiture)
+// voiture.plusRapide(moto)
+console.log(voiture.plusRapide(moto))
