@@ -1,4 +1,4 @@
-export default class vehicule{
+export default class Vehicule{
     constructor(nomVehicule,nbrRoue,vitesse){
         this.nomVehicule= nomVehicule;
         this.nbrRoue = nbrRoue;
@@ -12,8 +12,8 @@ export default class vehicule{
         this.vitesse+=50;
         return this.vitesse
     }
-    plusRapide(vehicule){
-        if (this.vitesse>vehicule.vitesse){
+    plusRapide(Vehicule){
+        if (this.vitesse>Vehicule.vitesse){
             return `"le vehicule" ${this.nomVehicule}"est le plus rapide."`
         }else if (this.vitesse<vehicule.vitesse){
             return`"le vehicule" ${vehicule.vitesse}"est le plus rapide."`
