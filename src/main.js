@@ -19,19 +19,19 @@ try {
 try {
   clients[2].virement(clients[1],300)
 } catch (error) {
-  console.error(error.message)
+  console.log(error.message)
 }
 console.log(clients)
 clients[1].ajout(300);
 try {
   clients[2].retrait(300);
 } catch (error) {
-  console.error(error.message)
+  console.log(error.message)
 }
 try {
   clients[0].retrait(1200)
 } catch (error) {
-  console.error(error.message)
+  console.log(error.message)
 }
 for (let i = 0; i < clients.length; i++){
   console.log(clients[i])
