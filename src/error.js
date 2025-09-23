@@ -1,10 +1,10 @@
 export default class ErrorCustom {
     afficher(value) {
-        if (value > 10) {
-            console.log("C'est plus grand que 10")
+        if (value > 0) {
+            console.log("Le virement a été réalisé avec succès")
         }
-        if (value < 10) {
-            throw new Error("Le nombre est plus petit que 10")
+        if (value < 0) {
+            throw new Error("Le solde du compte est insuffisant")
         }
     }
 }
