@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestion des comptes</title>
+  </head>
+<body>
+  <h1>Gestion des comptes</h1>
+  <div class="creation">
+    <h2>Créer le compte</h2>
+      <input type="text" id="id_nom" placeholder ="nom">
+      <button type="button" id="bt_create">Création compte</button>
+  </div>
+
+  <div class="operation">
+    <h2>OpérationS</h2>
+    <input type="text" id="id_compte" placeholder="Numéro compte">
+    <input type="number" id="id_montant" placeholder="Montant" min="0" step="0.01">€ <br>
+    <button type="button" id="id_crediter">Créditer</button>
+    <button type="button" id="id_retirer">Retirer</button>
+  </div>
+
+  <div class ="virements">
+    <h2>Virements</h2>
+    <input type="text" id="id_source" placeholder="Compte source">
+    <input type="text" id="id_cible" placeholder="Compte cible">
+    <input type ="number" id="id_montant_virement" placeholder="Montant" min="0" step="0.01">€ <br>
+    <button type="button" id="id_virement">Virement</button>
+  </div>
+
+  <div class="messages">
+    <h2>Messages</h2>
+    <textarea id="text_area" placeholder="Afficher les messages"></textarea>
+  </div>
+
+
+
+
+
+
+
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
