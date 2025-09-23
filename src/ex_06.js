@@ -9,16 +9,19 @@ export default class CompteBancaire {
     retrait(x) {
         this.solde -= x;
         if (this.solde < 0) {
+            this.solde+=x
             throw new Error("Le solde du compte est insuffisant");
+            
         }
     }
         virement(autreCompte, somme) {
             this.retrait(somme);
             autreCompte.ajout(somme);
             if (this.solde < 0) {
-                throw new Error("Le solde du compte est insuffisant")
-            
+                this.ajout(somme);
+                autreCompte.retrait(somme);
+                throw new Error("Le solde du compte est insuffisant");
+                
+            }
         }
-    
-    }
-}
+    } 
