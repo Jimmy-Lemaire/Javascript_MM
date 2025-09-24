@@ -38,3 +38,11 @@ try {
 } catch (error) {
   console.log("Le solde du compte n'est pas suffisant")
 }
+try {
+  virement.addEventListener("click", function () {
+    source.virement(cible, parseInt(montantVirement))
+    console.log(tabComptes)
+  })
+} catch (error) {
+  console.log("Le solde du compte n'est pas suffisant")
+}
