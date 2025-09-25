@@ -1,0 +1,22 @@
+meta {
+  name: meteo2
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.openweathermap.org/data/2.5/weather?lang=fr&units=metric&q=&appid=
+  body: none
+  auth: inherit
+}
+
+params:query {
+  lang: fr
+  units: metric
+  q: 
+  appid: 
+}
+
+settings {
+  encodeUrl: true
+}
